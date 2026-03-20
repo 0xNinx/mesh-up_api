@@ -1,6 +1,6 @@
 # 🧠 Mesh API
 
-Open-source problem-solving platform with AI-powered quality scoring.
+> Open-source problem-solving platform with AI-powered quality scoring — participating in [Drips Wave](https://www.drips.network/solutions/wave) funding cycles.
 
 ## What is Mesh?
 
@@ -9,6 +9,10 @@ A collaborative platform where communities solve real-world problems through:
 - AI-assisted solution evaluation
 - Quality-based rankings (not just popularity)
 - Open-source implementation tracking
+
+## 🌊 Drips Wave
+
+This project participates in **Drips Wave** — on-chain, recurring open-source funding cycles. Contributors earn rewards by solving issues during active Waves. Browse the [Issues](https://github.com/ThinknetCollective/mesh-up_api/issues) for tasks tagged with complexity ratings.
 
 ## 🌟 Why Mesh Matters to Stellar Community
 
@@ -68,53 +72,39 @@ Mesh uses **ethical quality metrics** and can integrate with Stellar blockchain 
 **SDK**: `@stellar/stellar-sdk`  
 **Docs**: https://developers.stellar.org/
 
-### Support This Project
-
-If you believe in:
-- ✅ Ethical AI (quality over popularity)
-- ✅ Open-source collaboration
-- ✅ Decentralized reputation
-- ✅ Rewarding problem-solvers fairly
-
-**Star this repo ⭐ and contribute!**
-
----
-
-*Built for the Stellar community, by problem-solvers worldwide.*
-
-
-
 ## Tech Stack
 
 - **Backend**: NestJS (TypeScript)
-- **Database**: PostgreSQL + TypeORM
+- **Database**: PostgreSQL + TypeORM (planned)
 - **AI**: OpenAI GPT-3.5 (optional, with keyword fallback)
-- **Auth**: JWT
-- **API Docs**: Swagger/OpenAPI
+- **Auth**: JWT (planned)
+- **API Docs**: Swagger/OpenAPI (planned)
 
 ## Quick Start
+
 ```bash
-git clone https://github.com/yourusername/mesh-up_api.git
-cd mesh-api
+git clone https://github.com/ThinknetCollective/mesh-up_api.git
+cd mesh-up_api
 npm install
-npm run setup
+cp .env.example .env
 npm run start:dev
 ```
 
-Visit: http://localhost:3000/api/docs
+Visit: http://localhost:3000
 
 ## Contributing
 
-We welcome contributions! Check our [Issues](https://github.com/yourusername/mesh-api/issues):
+We welcome contributions! Check our [Issues](https://github.com/ThinknetCollective/mesh-up_api/issues):
 
-- 🟢 **Easy** (`good first issue`) - Perfect for beginners
-- 🟡 **Medium** - Core features  
-- 🔴 **Hard** - Complex challenges
-- ⭐ **Stellar** - Moonshot goals
+- 🟢 **Easy** (`good first issue`) — Perfect for beginners
+- 🟡 **Medium** — Core features
+- 🔴 **Hard** — Complex challenges
+- ⭐ **Stellar** — Blockchain integration tasks
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## Project Structure
+## Planned Project Structure
+
 ```
 src/
 ├── mesh-nodes/     # Problems/discussions
@@ -127,14 +117,13 @@ src/
 
 ## License
 
-MIT - Open source, forever.
+[MIT](LICENSE)
 
 ## Community
 
 - **Issues**: Bug reports & feature requests
 - **Discussions**: Questions & ideas
-- **Twitter**: @mesh_api (if you have one)
 
 ---
 
-**Built with ❤️ by the Mesh community**
+**Built with ❤️ by [ThinknetCollective](https://github.com/ThinknetCollective)**
