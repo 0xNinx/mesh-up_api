@@ -1,11 +1,25 @@
 import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { WebsocketsModule } from './websockets/websockets.module';
 
 @Module({
-  imports: [AuthModule, WebsocketsModule],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'postgres',
+      host: process.env.DATABASE_HOST || 'localhost',
+      port: parseInt(process.env.DATABASE_PORT, 10) || 5432,
+      username: process.env.DATABASE_USER || 'postgres',
+      password: process.env.DATABASE_PASSWORD || 'postgres',
+      database: process.env.DATABASE_NAME || 'mesh_api',
+      autoLoadEntities: true,
+      synchronize: true, // Should be false in production
+    }),
+    AuthModule,
+    WebsocketsModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
