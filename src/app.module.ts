@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { WebsocketsModule } from './websockets/websockets.module';
 import { MeshNodesModule } from './mesh-nodes/mesh-nodes.module';
 import { EmbeddingsModule } from './embeddings/embeddings.module';
+import { SearchModule } from './search/search.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { EmbeddingsModule } from './embeddings/embeddings.module';
     WebsocketsModule,
     MeshNodesModule,
     EmbeddingsModule,
+    SearchModule,
   ],
   controllers: [AppController],
   providers: [AppService],
