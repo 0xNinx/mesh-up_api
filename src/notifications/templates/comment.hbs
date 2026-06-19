@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1e293b; line-height: 1.6; }
+    .card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; max-width: 600px; margin: 20px auto; }
+    .footer { font-size: 11px; color: #64748b; margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 12px; }
+    .btn { background: #10b981; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>Hello {{recipientName}},</h3>
+    <p>An engineer just left a comment response tracking your solution blueprint:</p>
+    <blockquote>"{{commentText}}"</blockquote>
+    <p><a href="{{solutionUrl}}" class="btn">View Thread Response</a></p>
+    <div class="footer">
+      You are receiving this because your communication configuration allows comment updates. <br/>
+      <a href="{{unsubscribeUrl}}">Deactivate this notification stream instantly</a>
+    </div>
+  </div>
+</body>
+</html>
