@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; color: #1e293b; }
+    .card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; max-width: 600px; margin: 20px auto; }
+    .footer { font-size: 11px; color: #64748b; margin-top: 24px; padding-top: 12px; border-top: 1px solid #f1f5f9; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>🚀 Your Weekly Drips Engineering Summary</h3>
+    <p>Hi {{recipientName}}, here are top structural algorithmic friction blocks trending this week:</p>
+    <ul>
+      {{#each trackingProblems}}
+        <li><strong>{{this.title}}</strong> - Requested by {{this.authorName}}</li>
+      {{/each}}
+    </ul>
+    <p><a href="https://drips.io/explore">Explore Active Coding Tracks</a></p>
+    <div class="footer">
+      Managed notification services sent periodically to your account. <br/>
+      <a href="{{unsubscribeUrl}}">Unsubscribe completely from our weekly roundups</a>
+    </div>
+  </div>
+</body>
+</html>
