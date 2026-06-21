@@ -9,6 +9,7 @@ import { MeshNodesModule } from './mesh-nodes/mesh-nodes.module';
 import { EmbeddingsModule } from './embeddings/embeddings.module';
 import { SearchModule } from './search/search.module';
 import { SolutionsModule } from './solutions/solutions.module';
+import { HealthModule } from './health/health.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { SolutionsModule } from './solutions/solutions.module';
     EmbeddingsModule,
     SearchModule,
     SolutionsModule,
+    HealthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
